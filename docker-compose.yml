@@ -1,7 +1,7 @@
+
 services:
-mysqldb:
-images: 'mysql:latest'
-environments:
- - MYSQL_ROOT_PASSWORD = "root"
- - MYSQL_DATABASE = "userinfo"
-container_name: "mysqldb"
+    mywebapp:
+        build: ./
+        ports:
+            - 8080:3000
+        container_name: 'mywebapp'
