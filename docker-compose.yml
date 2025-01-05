@@ -1,0 +1,7 @@
+services:
+mysqldb:
+images: 'mysql:latest'
+environments:
+ - MYSQL_ROOT_PASSWORD = "root"
+ - MYSQL_DATABASE = "userinfo"
+container_name: "mysqldb"
